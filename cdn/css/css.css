@@ -1,0 +1,206 @@
+body {
+    color: #000 !important;
+    overflow-x: hidden !important;
+    height: 100%;
+    background-color: #333 !important;
+    background-repeat: no-repeat !important;
+}
+
+.progress {
+    height: 13px !important;
+    width: 350px !important;
+    margin: 10px 20px !important;
+    background-color: #aaa !important;
+}
+
+.progress-bar {
+    background-color: #ff0057 !important;
+}
+
+.count {
+    width: 350px !important;
+}
+
+.fit-image {
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card {
+    padding-bottom: 20px !important;
+}
+
+.card-header {
+    padding: 20px 60px !important;
+}
+
+.card-body {
+    display: none !important;
+    padding-left: 55px !important;
+    padding-right: 55px !important;
+}
+
+.card-body.show {
+    display: block !important;
+}
+
+.yellow-text {
+    color: #fff !important;
+}
+
+.card-block {
+    width: 235px !important;
+    border: 1px solid lightgrey !important;
+    padding: 20px !important;
+    border-radius: 5px !important;
+    background-color: #FAFAFA !important;
+    margin-bottom: 30px !important;
+}
+
+.radio {
+    display: inline-block !important;
+    border-radius: 0 !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
+    color: #000 !important;
+    font-weight: 500 !important;
+    -webkit-filter: grayscale(100%) !important;
+    -moz-filter: grayscale(100%) !important;
+    -o-filter: grayscale(100%) !important;
+    -ms-filter: grayscale(100%) !important;
+    filter: grayscale(100%) !important;
+}
+
+.radio:hover {
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+.radio.selected {
+    border: 1px solid #F9A825 !important;
+    box-shadow: 0px 8px 16px 0px #EEEEEE !important;
+    -webkit-filter: grayscale(0%) !important;
+    -moz-filter: grayscale(0%) !important;
+    -o-filter: grayscale(0%) !important;
+    -ms-filter: grayscale(0%) !important;
+    filter: grayscale(0%) !important;
+}
+
+.fa-check {
+    color: #ff0057 !important;
+    border-radius: 50% !important;
+    border: 2px solid #ff0057 !important;
+    padding: 5px !important;
+}
+
+.fa-circle {
+    color: #FAFAFA !important;
+    border-radius: 50% !important;
+    border: 2px solid #BDBDBD !important;
+    padding: 5px 6.155px !important;
+}
+
+.pic,
+.pic-0 {
+    height: 90px !important;
+    width: 130px !important;
+}
+
+.pic {
+    margin-top: 30px !important;
+    margin-bottom: 20px !important;
+}
+
+.btn-blue {
+    margin-top: 40px !important;
+    background-color: #1A237E !important;
+    color: #fff !important;
+    width: 28% !important;
+}
+
+.btn-blue:hover {
+    background-color: #000 !important;
+}
+
+.btn-secondary {
+    margin-top: 40px !important;
+    width: 28% !important;
+}
+
+.fa-long-arrow-right {
+    float: right !important;
+    margin-top: 4px !important;
+}
+
+.fa-long-arrow-left {
+    float: left !important;
+    margin-top: 4px !important;
+}
+
+select,
+input,
+textarea {
+    padding: 8px 15px 8px 15px !important;
+    border-radius: 0px !important;
+    margin-bottom: 25px !important;
+    margin-top: 2px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    color: #2C3E50 !important;
+    background-color: #ECEFF1 !important;
+    border: 1px solid #ccc !important;
+    font-size: 16px !important;
+    letter-spacing: 1px !important;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #ff0057 !important;
+    outline-width: 0 !important;
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0 !important;
+}
+
+.next {
+    cursor: pointer;
+
+}
+
+
+.toolt {
+    position: relative !important;
+    display: inline-block !important;
+}
+
+.toolt .toolttext {
+    visibility: hidden !important;
+    width: 300px !important;
+    background-color: rgb(75, 75, 75, .96);
+    color: #fff !important;
+    text-align: center !important;
+    border-radius: 6px !important;
+    padding: 5px 5px !important;
+
+    /* Position the tooltip */
+    position: absolute !important;
+    z-index: 1 !important;
+    top: 100% !important;
+    left: 60px !important;
+    margin-left: -60px !important;
+}
+
+.toolt:hover .toolttext {
+    visibility: visible !important;
+}
+
+.toolt .yellow-text:hover {
+    color: #BDBDBD !important;
+}
