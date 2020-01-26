@@ -37,7 +37,7 @@
                                         Qual tipo de sistema você deseja desenvolver?
                                         <i class="fas fa-info-circle pl-2" style="font-size: 15px;"></i>
                                     </h5>
-                                    <span class="toolttext">
+                                    <span class="toolttext mt-2">
                                         Escolha o tipo de plataforma qual o sistema será utilizado e desenvolvido.
                                     </span>
                                 </div>
@@ -177,7 +177,7 @@
                                         Você quer adicionar aplicação mobile ao sistema?
                                         <i class="fas fa-info-circle pl-2" style="font-size: 15px;"></i>
                                     </h5>
-                                    <span class="toolttext">
+                                    <span class="toolttext mt-2">
                                         Caso queira desenvolver uma versão para smartphones,
                                         tablets, iPads, etc, selecione uma das opções abixo.
                                     </span>
@@ -251,7 +251,7 @@
                                         Qual visual você deseja ter no seu sistema?
                                         <i class="fas fa-info-circle pl-2" style="font-size: 15px;"></i>
                                     </h5>
-                                    <span class="toolttext">
+                                    <span class="toolttext mt-2">
                                         Selecione o estilo que irá definir a exibição do seu sistema.
                                     </span>
                                 </div>
@@ -322,7 +322,7 @@
                                         Você precisa de um sistema multiárea?
                                         <i class="fas fa-info-circle pl-2" style="font-size: 15px;"></i>
                                     </h5>
-                                    <span class="toolttext">
+                                    <span class="toolttext mt-2">
                                         Sistema multiárea é um sistema que possui areas separadas. <br>
                                         Ex. (loja virtual, pefil do cliente e perfil do vendedor).
                                     </span>
@@ -396,7 +396,7 @@
                                         Você precisa de um sistema de permissão e controle de usuários?
                                         <i class="fas fa-info-circle pl-2" style="font-size: 15px;"></i>
                                     </h5>
-                                    <span class="toolttext">
+                                    <span class="toolttext mt-2">
                                         O módulo de permissão é onde limita o acesso do perfil do usuário
                                         selecionado.
                                     </span>
@@ -457,7 +457,7 @@
                                         O acesso ao seu sistema é pago? É necessário automatização?
                                         <i class="fas fa-info-circle pl-2" style="font-size: 15px;"></i>
                                     </h5>
-                                    <span class="toolttext">
+                                    <span class="toolttext mt-2">
                                         O sistema será diponibilizado somente após confirmação de
                                         pagamento e qual é a forma de pagamento, caso o sistema seje pago.
                                     </span>
@@ -545,7 +545,7 @@
                                         Seu sistema precisa de um GED?
                                         <i class="fas fa-info-circle pl-2" style="font-size: 15px;"></i>
                                     </h5>
-                                    <span class="toolttext">
+                                    <span class="toolttext mt-2">
                                         Gerenciador eletrónica de documentos, é uma tecnologia
                                         que provê assinatura digital de documentos, organização e etc.
                                     </span>
@@ -684,7 +684,7 @@
                                         Você precisa integrar com outra plataforma?
                                         <i class="fas fa-info-circle pl-2" style="font-size: 15px;"></i>
                                     </h5>
-                                    <span class="toolttext">
+                                    <span class="toolttext mt-2">
                                         Será necessário desenvolver um sistema com parametros ou normas já existentes?
                                     </span>
                                 </div>
@@ -756,7 +756,7 @@
                                         Você precisa exportar informações para outros sistemas?
                                         <i class="fas fa-info-circle pl-2" style="font-size: 15px;"></i>
                                     </h5>
-                                    <span class="toolttext">
+                                    <span class="toolttext mt-2">
                                         Será necessário um módulo de exportação com adequando o sistema a
                                         parametros e normas já existentes?
                                     </span>
@@ -964,7 +964,7 @@
                                         Quantos módulos não abordados anteriormente seu sistema deve ter?
                                         <i class="fas fa-info-circle pl-2" style="font-size: 15px;"></i>
                                     </h5>
-                                    <span class="toolttext">
+                                    <span class="toolttext mt-2">
                                         Informe quantos modulos o seu sistema precisa ter e
                                         não foi citado nas perguntas anteriores.
                                     </span>
