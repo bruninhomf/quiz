@@ -1,7 +1,8 @@
 <?php
+    $errors[] = [];
     //echo "<pre>";var_dump($_POST); die;
 
-	require "../cdn/PHPMailer/Exception.php"; 
+	require "../cdn/PHPMailer/Exception.php";
 	require "../cdn/PHPMailer/OAuth.php"; 
 	require "../cdn/PHPMailer/PHPMailer.php"; 
 	require "../cdn/PHPMailer/POP3.php"; 
@@ -20,7 +21,9 @@
 		private $assunto = null; 
 		private $mensagem = null;
         private $amount = null;
+        private $errors = [];
 
+        //Validação
         public function __get($atributo) {
 			return $this->$atributo;
 		}
@@ -36,9 +39,62 @@
 
 			return true;
 		}
+
+        public function validate() {
+            if($this->verifyEmpty('nome')) {
+                $this->insertError('Nome Obrigatório');
+            }
+
+            if ($this->verifyEmpty('tel')) {
+                $this->insertError('Telefone Obrigatório');
+            }
+
+            /**if(!preg_match("/\(?\d{2}\)?\s?\d{5}\-?\d{4}/", $_POST['tel'])) {
+            insertError('Telefone Inválido');
+            }**/
+
+            if ($this->verifyEmpty('email')) {
+                $this->insertError('E-mail Obrigatório');
+            }
+
+            if (!$this->verifyEmpty('email') && !$this->validEmail($_POST['email'])) {
+                $this->insertError('E-mail Inválido');
+            }
+
+            if ($this->verifyEmpty('assunto')) {
+                $this->insertError('Assunto Obrigatório');
+            }
+
+            if ($this->verifyEmpty('mensagem')) {
+                $this->insertError('Mensagem Obrigatória');
+            }
+        }
+
+        public function validEmail($email) {
+            return filter_var($email, FILTER_VALIDATE_EMAIL);
+        }
+
+        public function verifyEmpty($key) {
+            return (!isset($_POST[$key]) || !$_POST[$key]);
+            /**if(!isset($_POST[$key]) && !$_POST[$key]) {
+            return true;
+            }
+            return false;**/
+        }
+
+        public function insertError($message) {
+            $this->errors[] = "<h6>{$message}</h6>";
+        }
 	}
 
-	$mensagem = new Mensagem(); 
+	$mensagem = new Mensagem();
+	$mensagem->validate();
+
+	if (count($mensagem->__get('errors'))) {
+	    http_response_code(400);
+	    echo json_encode($mensagem->__get('errors'));
+        die;
+    }
 
 	$mensagem->__set('nome', $_POST['nome']);
 	$mensagem->__set('tel', $_POST['tel']);

@@ -235,7 +235,7 @@
                             </div>
                         </div>
                         <div class="pl-4 pt-4">
-                            <button class="btn btn-outline-secondary prev mx-2">
+                            <button class="btn btn-outline-secondary prev3 mx-2">
                                 <span class="fa fa-long-arrow-left"></span>
                                 Back
                             </button>
@@ -1166,34 +1166,39 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel">Orçamento</h5>
+
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <form action="config/processa_envio.php" method="post">
+                                    <form id="form-body" action="config/processa_envio.php" method="post">
                                         <div class="modal-body">
                                             <div class="form-group">
                                                 <label for="nome">Nome <b class="text-danger">*</b> </label>
-                                                <input name="nome" type="text" class="form-control" id="nome" placeholder="João da Silva" required>
+                                                <input name="nome" type="text" class="form-control" id="nome" placeholder="João da Silva">
                                             </div>
                                             <div class="form-group">
                                                 <label for="tel">Telefone <b class="text-danger">*</b> </label>
-                                                <input name="tel" type="tel" class="form-control" id="tel" placeholder="(31) 4201-4241" required>
+                                                <input name="tel" type="text" class="form-control mask-phone" id="tel" placeholder="(31) 4201-4241">
                                             </div>
                                             <div class="form-group">
                                                 <label for="email">E-mail <b class="text-danger">*</b> </label>
-                                                <input name="email" type="text" class="form-control" id="email" placeholder="joao@dominio.com.br" required>
+                                                <input name="email" type="text" class="form-control" id="email" placeholder="joao@dominio.com.br">
                                             </div>
 
                                             <div class="form-group">
                                                 <label for="assunto">Assunto <b class="text-danger">*</b> </label>
-                                                <input name="assunto" type="text" class="form-control" id="assunto" placeholder="Orçamento" required>
+                                                <input name="assunto" type="text" class="form-control" id="assunto" placeholder="Orçamento">
                                             </div>
 
                                             <div class="form-group">
                                                 <label for="mensagem">Mensagem <b class="text-danger">*</b> </label>
-                                                <textarea name="mensagem" rows="6" class="form-control" id="mensagem" placeholder="Digite o seu texto..." required></textarea>
-                                            </div><br>
+                                                <textarea name="mensagem" rows="6" class="form-control" id="mensagem" placeholder="Digite o seu texto..."></textarea>
+                                            </div>
+                                            <div id="div-errors" style="display: none;">
+                                                <div class="alert alert-danger div-error" role="alert">
+                                                </div>
+                                            </div>
 
                                             <div id="orcamento" style="display: none;">
                                                 <input type="text" name="amount" id="amount">
@@ -1232,6 +1237,8 @@
     </div>
 
     <script src="cdn/js/script.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
 
 </body>
 </html>

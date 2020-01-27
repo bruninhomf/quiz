@@ -1,3 +1,4 @@
+//Ação de armazenar as perguntas e resposta
 $('.cardd').click((e) => {
     let perguntaId = $(e.currentTarget).parent().parent().parent().attr('id').replace('card-', '').trim();
     let pergunta = $(e.currentTarget).parent().parent().parent().find('.yellow-text').text().trim();
@@ -10,8 +11,31 @@ $('.cardd').click((e) => {
 });
 
 
-//Mascara Valor total
+// Validação formulário
+$('#form-body').submit((e) => {
+    e.preventDefault();
+    let body = $('#form-body').serializeArray();
 
+    $.ajax({
+        'url': 'config/processa_envio.php',
+        'type': 'POST',
+        'dataType': 'JSON',
+        'data': body,
+        error: (err) => {
+            $('.div-error').empty();
+            err.responseJSON.forEach((el) => {
+                $('.div-error').append(el);
+                $('#div-errors').show();
+            });
+        },
+        success: (res) => {
+            alert('Orçamento enviado para o e-mail.');
+        },
+    });
+});
+
+
+//Mascara Valor total
 Number.prototype.formatMoney = function(places, symbol, thousand, decimal) {
     places = !isNaN(places = Math.abs(places)) ? places : 2;
     symbol = symbol !== undefined ? symbol : "$";
@@ -405,6 +429,7 @@ next_fs.css({
 
     // INICIO - LINK de Paginas de Perguntas
 setProgressBar(++current);
+
 var c = document.getElementById('cnt').textContent;
 document.getElementById('cnt').textContent = Number(c) + 7.0;
 }
