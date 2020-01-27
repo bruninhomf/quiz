@@ -1108,42 +1108,38 @@
                                 projeto para passar um preço justo e cumprir o prazo de entrega.
                             </h4>
                         </div>
-                        <h5 class="text-white mb-2 text-center">
+                        <h5 class="text-white mb-3 text-center">
                             Profissionais necessário para este projeto:
                         </h5>
                         <div class="row pb-3 text-white">
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 pt-1">
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pt-1">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        Gerente de projetos
+                                    </li>
+                                    <li class="list-group-item bg-black">
+                                        Analista de banco de dados
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pt-1">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item bg-black">
                                         Designer
                                     </li>
                                     <li class="list-group-item">
-                                        Gerente de projetos
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 pt-1">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item bg-black">
-                                        Analista de banco de dados
+                                        Analista UX-UI
                                     </li>
                                     <li class="list-group-item">
                                         Desenvolvedor front-end
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 pt-1">
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pt-1">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item bg-black">
                                         Desenvolvedor back-end
                                     </li>
-                                    <li class="list-group-item">
-                                        Analista UX-UI
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 pt-1">
-                                <ul class="list-group list-group-flush">
                                     <li class="list-group-item bg-black">
                                         Tester
                                     </li>
