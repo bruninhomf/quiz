@@ -236,7 +236,7 @@
                         </div>
                         <div class="pl-4 pt-4">
                             <button class="btn btn-outline-secondary prev3 mx-2">
-                                <span class="fa fa-long-arrow-left"></span>
+                                <span class="fa fa-long-arrow-left pr-1"> </span>
                                 Back
                             </button>
                         </div>

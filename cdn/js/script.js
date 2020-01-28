@@ -281,6 +281,13 @@ $( "#01, #03" ).click(function() {
 $( "#04, #05, #06" ).click(function() {
     $( "#card-2" ).removeClass( "show" );
 });
+
+$( ".prev3" ).click(function() {
+    $( "#card-3" ).removeClass( "show" );
+    $( "#card-1" ).addClass( "show" );
+    // $( "#cnt" ).attr( "show" );
+
+});
     // FIM - Valores de Respostas
 
 
