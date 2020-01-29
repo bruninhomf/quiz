@@ -1,4 +1,5 @@
 <?php
+
     $errors[] = [];
     //echo "<pre>";var_dump($_POST); die;
 
@@ -123,6 +124,7 @@
 	    $mail->Password = 'bruno1990';				// SMTP senha do e-mail
 	    $mail->SMTPSecure = 'tls';					// Enable TLS encryption, `ssl` also accepted
 	    $mail->Port = 587;							// TCP port to connect to
+        $mail->CharSet = 'UTF-8';
 
 	    //Recipients
 	    $mail->setFrom('bruno.firmiano@inovedados.com.br', 'Formulário de contato');
@@ -162,11 +164,19 @@
         $mail->AltBody = 'É necessário utilizar um cliente que suporte HTML para ter acesso total ao conteúdo dessa mensagem';
 
 	    $mail->send();
-	    echo '<script src="../cdn/js/meu_script.js"></script>';
+
+	    http_response_code(200);
+	    echo json_encode([
+	        'error' => false,
+            'message' => 'Orcamento enviado com sucesso'
+        ]);
+	    die;
 
 	} catch (Exception $e) {
-	    echo 'Não foi possível enviar este e-mail! Por favor tente novamente mais tarde.';
-	    echo 'Detalhes do erro: ' . $mail->ErrorInfo;
+	    http_response_code(500);
+	    $mensagem->insertError('Não foi possível enviar esse e-mail. Tente novamente mais tarde');
+        echo json_encode($mensagem->__get('errors'));
+        die;
 	}
 
 ?>

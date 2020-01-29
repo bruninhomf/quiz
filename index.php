@@ -1200,6 +1200,12 @@
                                                 </div>
                                             </div>
 
+                                            <div id="div-success" style="display: none;">
+                                                <div class="alert alert-success" role="alert">
+                                                    Seu orçamento foi enviado para o e-mail.
+                                                </div>
+                                            </div>
+
                                             <div id="orcamento" style="display: none;">
                                                 <input type="text" name="amount" id="amount">
                                             </div>

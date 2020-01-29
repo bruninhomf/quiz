@@ -22,6 +22,7 @@ $('#form-body').submit((e) => {
         'dataType': 'JSON',
         'data': body,
         error: (err) => {
+            $('#div-success').hide();
             $('.div-error').empty();
             err.responseJSON.forEach((el) => {
                 $('.div-error').append(el);
@@ -29,7 +30,8 @@ $('#form-body').submit((e) => {
             });
         },
         success: (res) => {
-            alert('Orçamento enviado para o e-mail.');
+            $('#div-errors').hide();
+            $('#div-success').show();
         },
     });
 });
