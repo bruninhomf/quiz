@@ -204,3 +204,7 @@ button:focus {
 .toolt .yellow-text:hover {
     color: #BDBDBD !important;
 }
+
+div.content p{
+    text-align: justify;
+}
